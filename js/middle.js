@@ -1,5 +1,3 @@
-
-
 // Skriv en funktion som tar mitten-elementet
 // från den givna arrayen och returnerar det värdet
 //
@@ -8,12 +6,14 @@
 
 const middle = (array) => {
   // Skriv din kod här
-  
-}
+  const length = array.length;
+  const middleIndex = (Math.round(length / 2)) - 1;
+  return array[middleIndex];
+};
 
-const result1 = middle(["1", "2", "3", "4", "5"]) // "3"
-const result2 = middle(["A", "B", "C", "D", "E", "F", "G", "H", "I"]) // "E"
-console.log(result1); 
-console.log(result2); 
+const result1 = middle(["1", "2", "3", "4", "5"]); // "3"
+const result2 = middle(["A", "B", "C", "D", "E", "F", "G", "H", "I"]); // "E"
+console.log(result1);
+console.log(result2);
 
 module.exports = middle;
